@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_capture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaptureActivity"  >
+
+    <RelativeLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        >
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" >
+        </SurfaceView>
+
+       <lubobul.cameratest.CustomView
+            android:id="@+id/customView"
+            android:layout_centerInParent="true"
+            android:layout_height="135dp"
+            android:layout_width="240dp"
+           android:background="@android:color/transparent"/>
+
+      <!--   <ImageView
+            android:id="@+id/customView"
+            android:layout_centerInParent="true"
+            android:layout_height="135dp"
+            android:layout_width="240dp"
+            android:background="@android:color/transparent"/>-->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:id="@+id/doMagicButton"
+            android:text="Do magic"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</FrameLayout>
